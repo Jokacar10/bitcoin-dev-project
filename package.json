@@ -17,7 +17,7 @@
         "test": "jest"
     },
     "dependencies": {
-        "@apollo/client": "^3.10.3",
+        "@apollo/client": "^3.13.8",
         "@apollo/experimental-nextjs-app-support": "^0.10.1",
         "@bitcoin-dev-project/bdp-ui": "^1.5.2",
         "@codesandbox/sandpack-react": "^2.18.2",
