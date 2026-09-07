@@ -113,5 +113,16 @@
       "flaky test"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/84478549?v=4"
+  },
+  {
+    "url": "https://github.com/fedimint/fedimint/issues/9063",
+    "publishedAt": "2026-08-25T15:02:47Z",
+    "title": "CI: walletv2 unit test timed out waiting for deposit auto-claim",
+    "labels": [
+      "bug",
+      "CI",
+      "flaky test"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/84478549?v=4"
   }
 ]

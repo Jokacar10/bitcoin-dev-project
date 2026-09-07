@@ -91,5 +91,24 @@
       "bug"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2274",
+    "publishedAt": "2026-09-07T13:24:37Z",
+    "title": "`TxGraph::insert_txout` overwrites existing floating txout but returns empty `ChangeSet`",
+    "labels": [
+      "bug",
+      "good first issue"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2277",
+    "publishedAt": "2026-09-07T15:14:26Z",
+    "title": "`KeychainTxOutIndex` panics on overlapping descriptors (non-index-0 spk)",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   }
 ]
