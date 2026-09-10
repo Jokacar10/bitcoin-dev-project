@@ -98,7 +98,7 @@
     "title": "`TxGraph::insert_txout` overwrites existing floating txout but returns empty `ChangeSet`",
     "labels": [
       "bug",
-      "good first issue"
+      "discussion"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   },
