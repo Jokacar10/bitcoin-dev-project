@@ -272,5 +272,14 @@
       "bug"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2306",
+    "publishedAt": "2026-09-11T14:45:44Z",
+    "title": "file_store: oversized entry length prefix panics `Store::load` instead of returning an error",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   }
 ]
