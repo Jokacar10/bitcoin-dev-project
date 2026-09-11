@@ -13,19 +13,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/3866",
-    "publishedAt": "2019-12-20T17:29:54Z",
-    "title": "[Feature Request] add --cltv-expiry option to addinvoice of lncli",
-    "labels": [
-      "enhancement",
-      "beginner",
-      "feature request",
-      "good first issue",
-      "cli"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/4135",
     "publishedAt": "2020-03-31T23:58:20Z",
     "title": "REST API returns a 500 Internal Server Error when trying to fetch an invoice if there are no invoices at all",
@@ -1135,6 +1122,16 @@
     "labels": [
       "bug",
       "neutrino"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/9093",
+    "publishedAt": "2024-09-12T15:28:23Z",
+    "title": "[bug]: Fault in the docker reproducible release-build, compile process on macOS",
+    "labels": [
+      "bug",
+      "needs triage"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   }
