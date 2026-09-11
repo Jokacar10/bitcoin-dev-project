@@ -236,5 +236,41 @@
       "bug"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2301",
+    "publishedAt": "2026-09-11T10:27:06Z",
+    "title": "Unconfirmed spend with an invalid witness removes a confirmed UTXO from the balance",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2302",
+    "publishedAt": "2026-09-11T10:32:16Z",
+    "title": "Electrum sync forwards unrelated history transactions and its caches never evict",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2304",
+    "publishedAt": "2026-09-11T10:54:46Z",
+    "title": "Electrum sync leaves a transaction without anchor or `seen_at` when its merkle proof fails",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2305",
+    "publishedAt": "2026-09-11T12:37:14Z",
+    "title": "Electrum batch responses are paired with `zip` without length checks",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   }
 ]
