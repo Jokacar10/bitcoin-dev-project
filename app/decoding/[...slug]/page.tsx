@@ -8,11 +8,13 @@ import { components } from "@/components/decoding-bitcoin/markdown-ui/MDXCompone
 import siteMetadata from "@/data/siteMetadata"
 import { getAuthorDetails, getTopicData } from "@/utils/content-utils"
 import TopicBanner from "@/components/decoding-bitcoin/layouts/TopicBanner"
+import FullWidthLayout from "@/components/decoding-bitcoin/layouts/FullWidthLayout"
 
 const defaultLayout = "TopicLayout"
 const layouts = {
     TopicLayout,
-    TopicBanner
+    TopicBanner,
+    FullWidthLayout
 }
 type LayoutKey = keyof typeof layouts
 
@@ -54,7 +56,9 @@ export async function generateMetadata({
             card: "summary_large_image",
             title: post.title,
             description: post.summary,
-            images: imageList
+            images: imageList,
+            site: siteMetadata.twitterHandle,
+            creator: siteMetadata.twitterHandle
         }
     }
 }
@@ -70,6 +74,12 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 
     const Layout = layouts[(post.layout as LayoutKey) || defaultLayout]
 
+    const pageComponents = Object.fromEntries(
+        Object.entries(components).filter(([key]) =>
+            (post.usedComponents as string[]).includes(key)
+        )
+    )
+
     return (
         <div className="scroll-smooth">
             <script
@@ -84,7 +94,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
             >
                 <MDXLayoutRenderer
                     code={post.body.code}
-                    components={components}
+                    components={pageComponents}
                     toc={post.toc}
                 />
             </Layout>

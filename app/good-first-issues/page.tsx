@@ -1,18 +1,20 @@
-import React from "react"
+import React, { Suspense } from "react"
 
 import RepositoryIssues from "@/components/repository-issues"
 import { getRepoIssues } from "@/lib/get-repo-issues"
 import { genPageMetadata } from "../seo"
 
 export const metadata = genPageMetadata({
-    title: "Good First Issues | Bitcoin Dev Project",
+    title: "Good First Issues",
     keywords: "bitcoin, open source, good first issues, bitcoin development",
     description:
         "Explore Good First Issues from vetted Bitcoin open-source projects and start making impactful contributions today!",
     openGraph: {
         images: [
             {
-                url: "https://bitcoindevs.xyz/images/pages-thumbnails/good-first-issues.png",
+                url: "https://bitcoindevs.xyz/images/pages-thumbnails/good-first-issues.webp",
+                width: 1200,
+                height: 630,
                 alt: "Good First Issues"
             }
         ],
@@ -24,7 +26,7 @@ export const metadata = genPageMetadata({
     },
     twitter: {
         images: [
-            "https://bitcoindevs.xyz/images/pages-thumbnails/good-first-issues.png"
+            "https://bitcoindevs.xyz/images/pages-thumbnails/good-first-issues.webp"
         ],
         card: "summary_large_image",
         title: "Good First Issues | Bitcoin Dev Project",
@@ -38,7 +40,15 @@ const Contribute = async () => {
     const issues = await getRepoIssues()
     return (
         <main className="mx-auto">
-            <RepositoryIssues issues={issues} />
+            <Suspense
+                fallback={
+                    <div className="w-full min-h-[calc(100vh-88px)] flex items-center justify-center">
+                        Loading...
+                    </div>
+                }
+            >
+                <RepositoryIssues issues={issues} />
+            </Suspense>
         </main>
     )
 }

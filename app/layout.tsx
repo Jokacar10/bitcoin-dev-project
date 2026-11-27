@@ -1,11 +1,15 @@
-import { Barlow } from "next/font/google"
+import {
+    Barlow,
+    Inter,
+    Montserrat,
+    Quicksand,
+    Source_Serif_4
+} from "next/font/google"
 import type { Metadata } from "next"
 import "./globals.css"
-import { Header } from "@/components/header"
-import { ThemeProvider } from "next-themes"
 import "remark-github-blockquote-alert/alert.css"
 import siteMetadata from "@/data/siteMetadata"
-import FooterComponent from "@/components/footer-component"
+import { ConditionalBody } from "@/components/conditional-body"
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteMetadata.siteUrl),
@@ -14,12 +18,20 @@ export const metadata: Metadata = {
         template: `%s | ${siteMetadata.title}`
     },
     description: siteMetadata.description,
+    keywords: siteMetadata.keywords,
     openGraph: {
         title: siteMetadata.title,
         description: siteMetadata.description,
         url: "./",
         siteName: siteMetadata.title,
-        images: [siteMetadata.socialBanner],
+        images: [
+            {
+                url: siteMetadata.socialBanner,
+                width: 1200,
+                height: 630,
+                alt: siteMetadata.title
+            }
+        ],
         locale: "en_US",
         type: "website"
     },
@@ -42,8 +54,11 @@ export const metadata: Metadata = {
     },
     twitter: {
         title: siteMetadata.title,
+        description: siteMetadata.description,
         card: "summary_large_image",
-        images: [siteMetadata.socialBanner]
+        images: [siteMetadata.socialBanner],
+        site: siteMetadata.twitterHandle,
+        creator: siteMetadata.twitterHandle
     }
 }
 
@@ -55,11 +70,48 @@ const barlow = Barlow({
     subsets: ["latin"]
 })
 
+const quicksand = Quicksand({
+    weight: ["300", "400", "500", "600", "700"],
+    variable: "--quicksand-font",
+    preload: true,
+    display: "swap",
+    subsets: ["latin"]
+})
+
+const montserrat = Montserrat({
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    variable: "--montserrat-font",
+    preload: true,
+    display: "swap",
+    subsets: ["latin"]
+})
+
+// Clean UI font for the Decoding Bitcoin course (see fontFamily.inter in tailwind config)
+const inter = Inter({
+    variable: "--font-inter",
+    preload: true,
+    display: "swap",
+    subsets: ["latin"]
+})
+
+// Serif reading font for lesson body text (see fontFamily.serif in tailwind config).
+// Headings/UI stay on Inter; only prose body uses this.
+const sourceSerif = Source_Serif_4({
+    weight: ["400", "500", "600"],
+    style: ["normal", "italic"],
+    variable: "--font-source-serif",
+    preload: true,
+    display: "swap",
+    subsets: ["latin"]
+})
+
 export default function RootLayout({
     children
 }: {
     children: React.ReactNode
 }) {
+    const fontVariables = `${barlow.variable} ${quicksand.variable} ${montserrat.variable} ${inter.variable} ${sourceSerif.variable}`
+
     return (
         <html
             lang={siteMetadata.language}
@@ -78,18 +130,9 @@ export default function RootLayout({
                     href="/feed.xml"
                 />
             </head>
-            <body
-                className={`${barlow.className}  bg-white dark:bg-black text-vscode-text-light dark:text-vscode-text-dark`}
-            >
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme={siteMetadata.theme}
-                >
-                    <Header />
-                    <main>{children}</main>
-                    <FooterComponent />
-                </ThemeProvider>
-            </body>
+            <ConditionalBody fontVariables={fontVariables}>
+                {children}
+            </ConditionalBody>
         </html>
     )
 }

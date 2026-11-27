@@ -1,134 +1,13 @@
 [
   {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/444",
-    "publishedAt": "2018-12-10T23:29:17Z",
-    "title": "RTL Language Support",
-    "labels": [
-      "Enhancement",
-      "Translation",
-      "good first issue",
-      "Invoice"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/5034",
-    "publishedAt": "2023-06-02T11:32:46Z",
-    "title": "[Bug]: Dash block is marked invalid",
-    "labels": [
-      "Bug"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/5156",
-    "publishedAt": "2023-07-05T21:05:41Z",
-    "title": "[Invoices] Improved filter iteration",
-    "labels": [
-      "Bug",
-      "UI / UX",
-      "good first issue",
-      "Invoice"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
     "url": "https://github.com/btcpayserver/btcpayserver/issues/5191",
     "publishedAt": "2023-07-25T17:42:56Z",
     "title": "[Dashboard] Support for Custom Ordering of Dashboard widgets",
     "labels": [
       "Bug",
       "UI / UX",
-      "Plugin"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6204",
-    "publishedAt": "2024-09-09T03:43:08Z",
-    "title": "Better URL input UX",
-    "labels": [
-      "good first issue",
-      "Design"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6653",
-    "publishedAt": "2025-04-05T16:45:11Z",
-    "title": "In Email Rules show \"Send the email to the buyer\" checkbox only if trigger supports it",
-    "labels": [
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6667",
-    "publishedAt": "2025-04-10T21:06:56Z",
-    "title": "Improve Bitcoin Wallet Labels to show Title of Payment Request, not Id",
-    "labels": [
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6697",
-    "publishedAt": "2025-04-25T02:10:45Z",
-    "title": "[Bug]: Keypad POS won't display \"Any amount\" items",
-    "labels": [
-      "good first issue",
-      "PoS"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6727",
-    "publishedAt": "2025-05-14T08:06:31Z",
-    "title": "Greenfield API - Improvements tracker",
-    "labels": [
-      "Enhancement",
-      "API",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6763",
-    "publishedAt": "2025-05-31T04:06:01Z",
-    "title": "Ask for confirmation to display QR code for Server Admins in POS",
-    "labels": [
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6772",
-    "publishedAt": "2025-06-06T21:12:26Z",
-    "title": "Don't show payment method selector if there's only a single payment method or in Bitcoin case Unified QR is selected",
-    "labels": [
-      "Enhancement",
-      "UI / UX",
-      "good first issue",
-      "Checkout"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6780",
-    "publishedAt": "2025-06-10T11:34:21Z",
-    "title": "[Bug]: 0 amount invoices no longer work as free items in POS, but generate any amount",
-    "labels": [
-      "Bug"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6792",
-    "publishedAt": "2025-06-13T21:28:11Z",
-    "title": "Allow updating Payment Request as Settled if there are settled invoices",
-    "labels": [
-      "Enhancement",
-      "good first issue"
+      "Plugin",
+      "Dashboard"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
   }

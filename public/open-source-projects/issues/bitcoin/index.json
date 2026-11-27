@@ -20,88 +20,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/16159",
-    "publishedAt": "2019-06-06T18:31:28Z",
-    "title": "listrecievedbyaddress with include_empty not filtering out \"send\" side of address book",
-    "labels": [
-      "Bug",
-      "Wallet"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/16444",
-    "publishedAt": "2019-07-23T19:44:51Z",
-    "title": "Assertion `setBlockIndexCandidates.count(pindex)' failed",
-    "labels": [
-      "Bug",
-      "Validation",
-      "CI failed"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/17020",
-    "publishedAt": "2019-10-02T11:46:27Z",
-    "title": "contrib: makeseeds.py improvements",
-    "labels": [
-      "P2P",
-      "Scripts and tools",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/17145",
-    "publishedAt": "2019-10-15T05:11:34Z",
-    "title": "GUI event loop should be block free",
-    "labels": [
-      "Brainstorming",
-      "GUI",
-      "Refactoring",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/17289",
-    "publishedAt": "2019-10-28T19:51:28Z",
-    "title": "contrib: Autogenerate bash completion",
-    "labels": [
-      "Feature",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/17506",
-    "publishedAt": "2019-11-18T14:04:12Z",
-    "title": "gen-manpages output depends on build options, so needs to check them",
-    "labels": [
-      "Scripts and tools",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/18625",
-    "publishedAt": "2020-04-13T15:02:01Z",
-    "title": "untrust vs unsafe ?",
-    "labels": [
-      "Bug"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/19496",
-    "publishedAt": "2020-07-11T20:24:40Z",
-    "title": "Use of C++ undefined behavior in various `IteratorComparators`",
-    "labels": [
-      "Bug"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
     "url": "https://github.com/bitcoin/bitcoin/issues/19886",
     "publishedAt": "2020-09-05T17:57:44Z",
     "title": "noban permission probably shouldn't give additional permissions implcitly",
@@ -143,16 +61,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/22518",
-    "publishedAt": "2021-07-21T14:22:02Z",
-    "title": "0.21.1 native descriptor wallet showing incorrect value for `spendable`",
-    "labels": [
-      "Bug",
-      "Wallet"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
     "url": "https://github.com/bitcoin/bitcoin/issues/22559",
     "publishedAt": "2021-07-26T21:35:29Z",
     "title": "net: redundant connections with a single peer",
@@ -162,12 +70,11 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/22613",
-    "publishedAt": "2021-08-03T00:01:22Z",
-    "title": "Net code contains some UB -- violations of strict aliasing rules in C++",
+    "url": "https://github.com/bitcoin/bitcoin/issues/22592",
+    "publishedAt": "2021-07-31T17:44:31Z",
+    "title": "LeakSanitizer detects memory leak if CDBWrapper ctor fails",
     "labels": [
-      "Bug",
-      "P2P"
+      "Bug"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
@@ -182,59 +89,12 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/23589",
-    "publishedAt": "2021-11-25T10:11:19Z",
-    "title": "init: torcontrol argument should be validated",
-    "labels": [
-      "P2P",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/24049",
-    "publishedAt": "2022-01-12T16:12:37Z",
-    "title": "net: signed-integer-overflow in LocalServiceInfo",
-    "labels": [
-      "Bug",
-      "P2P"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/24612",
-    "publishedAt": "2022-03-18T14:35:49Z",
-    "title": "[flatpak]  - I cannot choose or change datadir when running from flatpak",
-    "labels": [
-      "Bug"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
     "url": "https://github.com/bitcoin/bitcoin/issues/25094",
     "publishedAt": "2022-05-09T15:16:14Z",
     "title": "Hidden service created by `--torcontrol` does not accept connections (General SOCKS server failure)",
     "labels": [
       "Bug",
       "P2P"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/25336",
-    "publishedAt": "2022-06-11T03:08:31Z",
-    "title": "Onlynet=ipv4 disables Tor advertisements",
-    "labels": [
-      "Bug"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/25669",
-    "publishedAt": "2022-07-21T18:43:24Z",
-    "title": "`externalip=...onion` ignored when onion/prox not set",
-    "labels": [
-      "Bug"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
@@ -257,51 +117,9 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/25980",
-    "publishedAt": "2022-09-01T21:21:36Z",
-    "title": "combinerawtransaction confusing with distinct transactions",
-    "labels": [
-      "Bug",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/26096",
-    "publishedAt": "2022-09-14T20:52:21Z",
-    "title": "`listtransactions` fails to list self-send transactions (for imported descriptor wallet)",
-    "labels": [
-      "Bug",
-      "Wallet"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
     "url": "https://github.com/bitcoin/bitcoin/issues/26317",
     "publishedAt": "2022-10-15T04:02:21Z",
     "title": "avoid_reuse=true is incorrectly skipping one of my UXTOs",
-    "labels": [
-      "Bug",
-      "Wallet"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/26362",
-    "publishedAt": "2022-10-21T11:52:40Z",
-    "title": "signed overflow in coinstats index",
-    "labels": [
-      "Brainstorming",
-      "Bug",
-      "UTXO Db and Indexes",
-      "RPC/REST/ZMQ"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/26442",
-    "publishedAt": "2022-11-01T19:52:36Z",
-    "title": "Use of undocumented/undefined boost::signals2 behavior in wallet",
     "labels": [
       "Bug",
       "Wallet"
@@ -347,55 +165,22 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/27219",
-    "publishedAt": "2023-03-07T11:14:10Z",
-    "title": "`combinepsbt` RPC does not work with P2TR inputs",
+    "url": "https://github.com/bitcoin/bitcoin/issues/27843",
+    "publishedAt": "2023-06-09T14:52:59Z",
+    "title": "ThreadI2PAcceptIncoming temporarily bypasses 125 connection ceiling",
     "labels": [
       "Bug",
-      "PSBT"
+      "Net"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/27975",
-    "publishedAt": "2023-06-26T09:14:38Z",
-    "title": "fuzz: Use-of-uninitialized-value in evutil_inet_pton",
+    "url": "https://github.com/bitcoin/bitcoin/issues/28635",
+    "publishedAt": "2023-10-11T08:56:02Z",
+    "title": "Test calling addnode more than once (and MAX_ADDNODE_CONNECTIONS)",
     "labels": [
       "Bug",
-      "Tests",
-      "Upstream"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/28179",
-    "publishedAt": "2023-07-28T10:56:14Z",
-    "title": "test: 999 of 999 multisig",
-    "labels": [
-      "Tests",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/28648",
-    "publishedAt": "2023-10-13T10:24:00Z",
-    "title": "test: Write assumeutxo tests",
-    "labels": [
-      "Wallet",
-      "Tests",
-      "Consensus",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/29398",
-    "publishedAt": "2024-02-07T09:47:49Z",
-    "title": "Internal bug detected: Fee needed > fee paid",
-    "labels": [
-      "Bug",
-      "Wallet"
+      "RPC/REST/ZMQ"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
@@ -430,31 +215,92 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/31293",
-    "publishedAt": "2024-11-15T08:54:02Z",
-    "title": "Discover() will not run if listening on any address with an explicit bind=0.0.0.0",
+    "url": "https://github.com/bitcoin/bitcoin/issues/32201",
+    "publishedAt": "2025-04-02T16:20:19Z",
+    "title": "BIP32: Maximal length of derivation paths and depth of extended keys",
     "labels": [
-      "P2P",
-      "good first issue"
+      "Bug",
+      "Questions and Help"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   },
   {
-    "url": "https://github.com/bitcoin/bitcoin/issues/31873",
-    "publishedAt": "2025-02-14T22:10:00Z",
-    "title": "guix: Unable to reproduce macOS SDK tarball on Fedora 40",
+    "url": "https://github.com/bitcoin/bitcoin/issues/33128",
+    "publishedAt": "2025-08-02T15:22:03Z",
+    "title": "*BSD, OmniOS: `-reindex` is broken",
+    "labels": [
+      "Bug",
+      "Block storage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoin/bitcoin/issues/33266",
+    "publishedAt": "2025-08-28T12:38:43Z",
+    "title": "signet: disk-space-DoS due to low mining difficulty",
+    "labels": [
+      "Bug",
+      "Resource usage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoin/bitcoin/issues/33940",
+    "publishedAt": "2025-11-24T14:11:12Z",
+    "title": "Memory leak when using IPC mining interface",
+    "labels": [
+      "Bug",
+      "Resource usage",
+      "IPC"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoin/bitcoin/issues/34190",
+    "publishedAt": "2026-01-02T12:43:54Z",
+    "title": "bitcoind shouldn't perform network activity if the option networkactive=0, e.g. [addrman] Selected IP:PORT from tried",
+    "labels": [
+      "Bug",
+      "Needs Conceptual Review"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoin/bitcoin/issues/35007",
+    "publishedAt": "2026-04-05T13:13:50Z",
+    "title": "removeForReorg incorrectly evicts valid BIP68 transactions with mempool parents after invalidateblock",
+    "labels": [
+      "Bug",
+      "Mempool"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoin/bitcoin/issues/35172",
+    "publishedAt": "2026-04-28T14:26:30Z",
+    "title": "txdb: Cursor warmup accepts malformed first coin key",
+    "labels": [
+      "Bug",
+      "Data corruption"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoin/bitcoin/issues/35648",
+    "publishedAt": "2026-07-03T12:29:00Z",
+    "title": "ci: Built depends cache misses OS toolchain updates",
+    "labels": [
+      "Bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoin/bitcoin/issues/35764",
+    "publishedAt": "2026-07-21T14:03:18Z",
+    "title": "depends: `local_dir` cache invalidation can miss source changes",
     "labels": [
       "Bug",
       "Build system"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "url": "https://github.com/bitcoin/bitcoin/issues/32531",
-    "publishedAt": "2025-05-16T13:54:49Z",
-    "title": "avoid using invalidateblock to directly test reorg behavior",
-    "labels": [
-      "good first issue"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/528860?v=4"
   }

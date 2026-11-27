@@ -1,9 +1,25 @@
 import { Wrapper } from "@/components/Wrapper"
-import Button from "@/components/button"
 import PageLevel from "@/components/page-level"
 import { curriculums, type KnownCurriculums } from "@/content/curriculums"
 import { slugify } from "@/utils/slugify"
 import Link from "next/link"
+import Image from "next/image"
+import { genPageMetadata } from "@/app/seo"
+import type { Metadata } from "next"
+
+export async function generateMetadata({
+    params
+}: {
+    params: { slug: KnownCurriculums }
+}): Promise<Metadata> {
+    const curriculum = curriculums[params.slug]
+    if (!curriculum) return {}
+
+    return genPageMetadata({
+        title: curriculum.title,
+        description: curriculum.description
+    })
+}
 
 export default function Curriculum({
     params
@@ -13,25 +29,36 @@ export default function Curriculum({
     const curriculum = curriculums[params.slug]
     if (!curriculum) {
         return (
-            <section className="flex h-[calc(100vh-250px)] flex-col items-center justify-center">
-                <div className="container mx-auto max-w-md space-y-6 text-center">
-                    <div className="space-y-2">
-                        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 dark:text-gray-100 max-sm:text-5xl">
-                            Oops, looks like you&apos;ve taken a wrong turn!
-                        </h1>
-                        <p className="text-gray-800 dark:text-gray-100">
-                            The page you&apos;re looking for doesn&apos;t exist
-                            or has been moved.
+            <div className="min-h-screen w-full bg-[#F4EFEA] flex flex-col">
+                <main className="flex flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-10 md:gap-0 py-10 lg:py-16">
+                    {/* LEFT TEXT */}
+                    <div className="max-w-xl text-center md:text-left">
+                        <p className="text-[22px] md:text-[36px] lg:text-[40px] text-gray-700 leading-snug mb-4">
+                            Overalls on, but nowhere to go.
+                        </p>
+
+                        <p className="text-[24px] md:text-[36px] font-semibold text-black leading-tight">
+                            Go back to{" "}
+                            <Link href="/">
+                                <span className="underline">homepage</span>
+                            </Link>
                         </p>
                     </div>
-                    <Button
-                        href="/"
-                        className="w-fit mx-auto text-center py-4 px-8"
-                    >
-                        Go back home
-                    </Button>
-                </div>
-            </section>
+
+                    {/* RIGHT IMAGE */}
+                    <div className="w-[220px] md:w-[360px] lg:w-[420px] flex justify-center">
+                        <Image
+                            src="/images/404.webp"
+                            alt="404 illustration"
+                            width={420}
+                            height={630}
+                            sizes="(max-width: 768px) 220px, (max-width: 1024px) 360px, 420px"
+                            className="w-full h-auto"
+                            priority
+                        />
+                    </div>
+                </main>
+            </div>
         )
     }
 

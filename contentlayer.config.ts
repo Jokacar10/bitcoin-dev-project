@@ -42,7 +42,20 @@ const computedFields: ComputedFields = {
         type: "string",
         resolve: (doc) => doc._raw.sourceFilePath
     },
-    toc: { type: "string", resolve: (doc) => extractTocHeadings(doc.body.raw) }
+    toc: { type: "string", resolve: (doc) => extractTocHeadings(doc.body.raw) },
+    usedComponents: {
+        type: "json",
+        resolve: (doc) => {
+            const raw = doc.body.raw
+            const jsxMatches = raw.match(/<([A-Z][a-zA-Z0-9]+)/g) ?? []
+            const found = new Set(jsxMatches.map((m: string) => m.slice(1)))
+
+            if (raw.includes("![")) found.add("Image")
+            if (/\[.+?\]\(/.test(raw)) found.add("CustomLink")
+
+            return Array.from(found)
+        }
+    }
 }
 
 export const Topic = defineDocumentType(() => ({
@@ -146,7 +159,10 @@ function createTagCount(allTopics: any[]) {
             })
         }
     })
-    writeFileSync("./app/tag-data.json", JSON.stringify(tagCount))
+    writeFileSync(
+        "./app/tag-data.json",
+        JSON.stringify(tagCount, null, 2) + "\n"
+    )
 }
 
 export default makeSource({

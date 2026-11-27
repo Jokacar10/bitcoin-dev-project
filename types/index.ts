@@ -1,4 +1,6 @@
 import { ImageProps } from "next/image"
+import { ComponentType, SVGProps } from "react"
+import { TagType } from "./curriculum"
 
 export type ProjectProperties = {
     name: string
@@ -7,6 +9,8 @@ export type ProjectProperties = {
     issue: string
     tags: string[]
     lang: string[]
+    platform?: "github" | "gitlab"
+    gitlab_labels?: string[]
 }
 
 export type Projects = {
@@ -48,6 +52,33 @@ export interface IFeature {
     summary: string
     description: string
     image: ImageProps["src"]
+    imageAlt: string
     icon?: ImageProps["src"]
     link: string
+}
+
+export type MottosNav = {
+    name: string
+    slug: Mottos
+}
+export type Mottos = "learn" | "contribute" | "career" | "get-funded"
+
+// Filters
+export interface FilterResourceType {
+    tag: TagType
+    description: string
+}
+
+// Curriculum for learn
+
+export interface FooterLinkItem {
+    name: string
+    link: string
+    target?: "_blank" | "_self" | "_parent" | "_top"
+    component?: ComponentType<SVGProps<SVGSVGElement>>
+}
+
+export interface FooterSection {
+    name: string
+    links: FooterLinkItem[]
 }

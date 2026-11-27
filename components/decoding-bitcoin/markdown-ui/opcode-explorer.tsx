@@ -1,15 +1,15 @@
 "use client"
 
 import { opcodeData } from "@/content/opcode-explorer"
-import { ResetIcon } from "@radix-ui/react-icons"
-import { motion } from "framer-motion"
+import * as m from "framer-motion/m"
 import {
     RewindIcon,
     PauseIcon,
     PlayIcon,
     FastForwardIcon,
     LayoutGridIcon,
-    LayoutListIcon
+    LayoutListIcon,
+    RotateCcw
 } from "lucide-react"
 import React, { useState, useRef, useEffect, useCallback } from "react"
 
@@ -22,7 +22,11 @@ interface SvgatorPlayer {
     currentTime: number
 }
 
-const OpCodeExplorer = () => {
+interface OpCodeExplorerProps {
+    initialView?: "compact" | "expanded"
+}
+
+const OpCodeExplorer = ({ initialView = "expanded" }: OpCodeExplorerProps) => {
     const [selectedOpCode, setSelectedOpCode] = useState<
         keyof typeof opcodeData
     >(Object.keys(opcodeData)[0] as keyof typeof opcodeData)
@@ -32,7 +36,9 @@ const OpCodeExplorer = () => {
     const [isPlaying, setIsPlaying] = useState(false)
     const [hasStarted, setHasStarted] = useState(false)
     const [totalSteps, setTotalSteps] = useState(4)
-    const [isExpandedView, setIsExpandedView] = useState(true)
+    const [isExpandedView, setIsExpandedView] = useState(
+        initialView === "expanded"
+    )
     const svgRef = useRef<HTMLObjectElement | null>(null)
     const playerRef = useRef<SvgatorPlayer | null>(null)
     const animationTimeoutRef = useRef<NodeJS.Timeout | null>(null)
@@ -202,7 +208,7 @@ const OpCodeExplorer = () => {
 
     return (
         <div className="mx-auto py-1 full-width">
-            <motion.div
+            <m.div
                 className="bg-vscode-container-light dark:bg-vscode-container-dark rounded-lg text-vscode-text-light dark:text-vscode-text-dark font-normal shadow-md overflow-hidden"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -214,7 +220,7 @@ const OpCodeExplorer = () => {
                         Bitcoin OpCode Explorer
                     </div>
                     {/* Only show the view toggle button on larger screens */}
-                    <motion.button
+                    <m.button
                         onClick={() => setIsExpandedView(!isExpandedView)}
                         className="hidden sm:flex p-2 rounded-md hover:bg-vscode-hover-light dark:hover:bg-vscode-hover-dark transition-colors duration-200 items-center"
                         whileHover={{ scale: 1.05 }}
@@ -235,7 +241,7 @@ const OpCodeExplorer = () => {
                                 </span>
                             </>
                         )}
-                    </motion.button>
+                    </m.button>
                 </div>
 
                 {/* Main content */}
@@ -251,7 +257,7 @@ const OpCodeExplorer = () => {
                         >
                             <div className="flex">
                                 {filteredOpCodes.map((opCode) => (
-                                    <motion.button
+                                    <m.button
                                         key={opCode}
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
@@ -272,13 +278,13 @@ const OpCodeExplorer = () => {
                                         }
                                     >
                                         {opCode}
-                                    </motion.button>
+                                    </m.button>
                                 ))}
                             </div>
                         </div>
                     </div>
 
-                    <motion.div
+                    <m.div
                         key={selectedOpCode}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -316,7 +322,7 @@ const OpCodeExplorer = () => {
                                     </object>
                                 </div>
                                 <div className="border-2 border-dashed border-vscode-lineNumber-light dark:border-vscode-lineNumber-dark p-3 rounded-lg bg-vscode-background-light dark:bg-vscode-background-dark flex items-center justify-center">
-                                    <motion.div
+                                    <m.div
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
                                     >
@@ -328,8 +334,8 @@ const OpCodeExplorer = () => {
                                             } transition-colors duration-300`}
                                             onClick={handlePrevious}
                                         />
-                                    </motion.div>
-                                    <motion.div
+                                    </m.div>
+                                    <m.div
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
                                     >
@@ -348,17 +354,17 @@ const OpCodeExplorer = () => {
                                                 onClick={handlePlay}
                                             />
                                         )}
-                                    </motion.div>
-                                    <motion.div
+                                    </m.div>
+                                    <m.div
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
                                     >
-                                        <ResetIcon
+                                        <RotateCcw
                                             className="h-6 w-6 mr-4 cursor-pointer text-vscode-text-light dark:text-vscode-text-dark hover:text-orange-500 transition-colors duration-300"
                                             onClick={handleReset}
                                         />
-                                    </motion.div>
-                                    <motion.div
+                                    </m.div>
+                                    <m.div
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
                                     >
@@ -370,9 +376,9 @@ const OpCodeExplorer = () => {
                                             } transition-colors duration-300`}
                                             onClick={handleNext}
                                         />
-                                    </motion.div>
+                                    </m.div>
                                     <div className="flex-grow bg-vscode-lineNumber-light dark:bg-vscode-lineNumber-dark h-2 rounded-full">
-                                        <motion.div
+                                        <m.div
                                             className="bg-orange-500 h-2 rounded-full"
                                             initial={{ width: "0%" }}
                                             animate={{
@@ -419,7 +425,7 @@ const OpCodeExplorer = () => {
                                             </button>
                                         </div>
                                     </div>
-                                    <motion.div
+                                    <m.div
                                         className="font-mono text-sm leading-relaxed"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
@@ -430,13 +436,13 @@ const OpCodeExplorer = () => {
                                                 ? currentOpCode.asm
                                                 : currentOpCode.hexCode}
                                         </pre>
-                                    </motion.div>
+                                    </m.div>
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </m.div>
                 </div>
-            </motion.div>
+            </m.div>
         </div>
     )
 }

@@ -1,11 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind typography;
+
+@import "@bitcoin-dev-project/bdp-ui/styles.css";
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+    --brand-card-bg: #efe9de;
+    --brand-green: #0e9158;
+    --brand-dark-100: #201e1e;
+    --brand-orange-100: #eb5234;
+    --brand-light-100: #f6f0e6;
 }
 
 body {
@@ -24,6 +30,42 @@ body {
     }
 }
 
+/* Slim, brand-tinted scrollbar for scroll containers (sidebar, panels).
+   Warm neutral thumb that turns brand-orange on hover; theme-aware. */
+.brand-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(60, 50, 40, 0.22) transparent;
+}
+.brand-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.brand-scrollbar::-webkit-scrollbar-track,
+.brand-scrollbar::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.brand-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(60, 50, 40, 0.22);
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-clip: content-box;
+}
+.brand-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(235, 82, 52, 0.6);
+    background-clip: content-box;
+}
+.dark .brand-scrollbar {
+    scrollbar-color: rgba(190, 190, 190, 0.25) transparent;
+}
+.dark .brand-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(190, 190, 190, 0.22);
+    background-clip: content-box;
+}
+.dark .brand-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(235, 82, 52, 0.65);
+    background-clip: content-box;
+}
+
 @keyframes shimmer {
     0% {
         left: -100%;
@@ -35,6 +77,21 @@ body {
 
 .animate-shimmer {
     animation: shimmer 2s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
 }
 
 .prose {
@@ -53,4 +110,87 @@ body {
 
 .animate-smooth-blink {
     animation: smoothBlink 1s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+.animate-float {
+    animation: float 1s ease-in-out infinite;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    background-clip: content-box !important;
+    -webkit-text-fill-color: #000000 !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.learn-cards-container a div div img {
+    max-width: 100px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.learn-cards-container a {
+    outline: 1px solid transparent;
+    transition: outline-color 0.2s ease-in;
+}
+
+.learn-cards-container a:hover {
+    outline-color: rgba(169, 164, 155, 0.75);
+}
+
+/* KaTeX renders variables in KaTeX_Math, which is an italic-only face, so
+   font-style alone cannot straighten them — the family has to change too.
+   Lesson math is single letters (Q, P, T, d, t, n) sitting inside upright
+   Inter body text, where the slant read as an inconsistency, not as notation.
+
+   !important is load-bearing here: katex.css is imported by the lesson page
+   while this file comes from the root layout, so Next emits KaTeX's rules
+   after these at identical specificity (0,2,0) and they would otherwise win. */
+.katex .mathnormal,
+.katex .mathit {
+    font-family: KaTeX_Main, "Times New Roman", serif !important;
+    font-style: normal !important;
+}
+
+/* Same swap, but keep the weight that made it \boldsymbol in the first place. */
+.katex .boldsymbol {
+    font-family: KaTeX_Main, "Times New Roman", serif !important;
+    font-style: normal !important;
+    font-weight: bold;
+}
+
+/* Display equations ($$…$$) carry the accent; inline $…$ stays body-colored so
+   variables inside a sentence don't strobe. #C2410C is the same burnt orange
+   ScriptBlock uses for OP_* opcodes, which ties equations to the code blocks —
+   and unlike orange-500 (2.5:1 on the cream) it clears WCAG AA at 4.6:1.
+   Lessons used to set this per-div; this is the single source of truth. */
+.katex-display,
+.katex-display .katex {
+    color: #c2410c;
+}
+
+/* orange-500 is too dark to reuse here (3.2:1 on #201e1e); orange-400 is 7.2:1. */
+.dark .katex-display,
+.dark .katex-display .katex {
+    color: #f7931a;
 }

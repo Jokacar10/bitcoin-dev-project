@@ -13,56 +13,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/2936",
-    "publishedAt": "2019-04-11T23:56:15Z",
-    "title": "Initiated channels do not show total fees for closing txs in getTransactions",
-    "labels": [
-      "bug",
-      "help wanted",
-      "rpc",
-      "wallet",
-      "backend"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/3866",
-    "publishedAt": "2019-12-20T17:29:54Z",
-    "title": "[Feature Request] add --cltv-expiry option to addinvoice of lncli",
-    "labels": [
-      "enhancement",
-      "beginner",
-      "feature request",
-      "good first issue",
-      "cli"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/4135",
-    "publishedAt": "2020-03-31T23:58:20Z",
-    "title": "REST API returns a 500 Internal Server Error when trying to fetch an invoice if there are no invoices at all",
-    "labels": [
-      "bug",
-      "REST",
-      "P3"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/4520",
-    "publishedAt": "2020-08-10T20:18:17Z",
-    "title": "Avoid adding all private channels with the same peer as hop hints in new invoices",
-    "labels": [
-      "enhancement",
-      "rpc",
-      "beginner",
-      "routing",
-      "payments"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/4796",
     "publishedAt": "2020-11-23T19:38:34Z",
     "title": "Encountering RequiredNodeFeatureMissing routing error in pathfinding is not gracefully handled",
@@ -85,18 +35,6 @@
       "notifications",
       "neutrino",
       "P2"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/4910",
-    "publishedAt": "2021-01-11T15:53:33Z",
-    "title": "fwdinghistory doesn't include HTLCs settled using HTLC interceptor RPC",
-    "labels": [
-      "bug",
-      "htlcswitch",
-      "P4",
-      "accounting"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -146,18 +84,6 @@
       "channel closing",
       "P2",
       "backups"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/5324",
-    "publishedAt": "2021-05-22T14:26:28Z",
-    "title": "Improve channel force close logging",
-    "labels": [
-      "help wanted",
-      "beginner",
-      "channels",
-      "logging"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -287,18 +213,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/6584",
-    "publishedAt": "2022-05-27T09:16:54Z",
-    "title": "Document Sphinx replay DB (Decayed Log Db)",
-    "labels": [
-      "onion routing",
-      "beginner",
-      "documentation",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/6603",
     "publishedAt": "2022-05-31T17:44:57Z",
     "title": "Sending incorrect onion error for \"peer offline\"",
@@ -403,18 +317,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7107",
-    "publishedAt": "2022-11-02T20:24:55Z",
-    "title": "[bug]: garbage collect `batch-replay` bucket in `sphinxreplay.db`",
-    "labels": [
-      "bug",
-      "database",
-      "htlcswitch",
-      "P0"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/7111",
     "publishedAt": "2022-11-03T15:01:39Z",
     "title": "[bug]: allow stopping of lnd during recovery rescan, properly resume after restart",
@@ -422,19 +324,6 @@
       "bug",
       "wallet",
       "recovery"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7123",
-    "publishedAt": "2022-11-07T04:22:45Z",
-    "title": "[feature]: Allow persisting dynamic configured alias when not set in lnd.conf or arguments",
-    "labels": [
-      "enhancement",
-      "beginner",
-      "config",
-      "good first issue",
-      "bug fix"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -504,29 +393,6 @@
       "bug",
       "missing reproduction",
       "zero conf"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7247",
-    "publishedAt": "2022-12-13T10:58:22Z",
-    "title": "[bug]: updatechanpolicy error: \"channel from self node has no policy\"",
-    "labels": [
-      "bug",
-      "channel closing",
-      "channels"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7300",
-    "publishedAt": "2023-01-07T14:05:26Z",
-    "title": "[bug]: channel open transaction fails to broadcast because lnd is unaware of own mempool transaction after rescan",
-    "labels": [
-      "bug",
-      "recovery",
-      "P2",
-      "mempool"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -625,16 +491,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7502",
-    "publishedAt": "2023-03-10T08:23:29Z",
-    "title": "[bug]: Opened channel, tx not broadcast, funds lower",
-    "labels": [
-      "bug",
-      "needs triage"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/7515",
     "publishedAt": "2023-03-15T19:04:59Z",
     "title": "[bug]: follow up on decreasing # of errors in `ListChannels`",
@@ -651,16 +507,6 @@
     "labels": [
       "bug",
       "gossip"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7551",
-    "publishedAt": "2023-03-29T20:31:25Z",
-    "title": "[bug]: `insufficient local balance` after trying to pay right after opening a channel",
-    "labels": [
-      "bug",
-      "needs triage"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -683,17 +529,6 @@
       "bug",
       "P1",
       "zero conf"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7621",
-    "publishedAt": "2023-04-20T08:59:15Z",
-    "title": "[bug]: scammed using a hold invoice",
-    "labels": [
-      "bug",
-      "P2",
-      "hodl-invoices"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -751,17 +586,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7694",
-    "publishedAt": "2023-05-15T02:05:58Z",
-    "title": "[bug]: Receiving \"unable to find node\" for a direct peer",
-    "labels": [
-      "bug",
-      "graph",
-      "needs triage"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/7738",
     "publishedAt": "2023-06-01T04:51:58Z",
     "title": "[bug]: Unannounced channel opens in inactive state.",
@@ -774,48 +598,12 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7749",
-    "publishedAt": "2023-06-07T01:36:33Z",
-    "title": "[feature]: ask password quickly after start",
-    "labels": [
-      "enhancement",
-      "wallet",
-      "beginner",
-      "up for grabs",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/7784",
     "publishedAt": "2023-06-22T09:48:56Z",
     "title": "[bug]: unknown error poping up. self payment but with intermediate routing fees?",
     "labels": [
       "bug",
       "payments",
-      "P2"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7786",
-    "publishedAt": "2023-06-22T17:42:11Z",
-    "title": "[bug]: no route found between two peers with active channel and sufficient balances",
-    "labels": [
-      "bug",
-      "routing",
-      "P3"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7832",
-    "publishedAt": "2023-07-13T16:33:04Z",
-    "title": "[bug]: `fee_limit_percent` missing in `SendPaymentV2`",
-    "labels": [
-      "bug",
-      "rpc",
-      "good first issue",
       "P2"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
@@ -843,27 +631,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7899",
-    "publishedAt": "2023-08-18T23:07:55Z",
-    "title": "[bug]: Generating mobile framework and swift files for ios",
-    "labels": [
-      "bug",
-      "mobile"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7933",
-    "publishedAt": "2023-08-28T11:58:20Z",
-    "title": "[bug]: subsystem contractcourt/sweeper improvements",
-    "labels": [
-      "bug",
-      "HTLC",
-      "utxo sweeping"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/7959",
     "publishedAt": "2023-09-05T11:31:44Z",
     "title": "[bug]: LND Suddenly lots of force closes, `Error while broadcasting transaction`",
@@ -871,29 +638,6 @@
       "bug",
       "P1",
       "force closes"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7964",
-    "publishedAt": "2023-09-07T11:22:53Z",
-    "title": "[feature]: allow configuring upfront shutdown address in `lnd.conf`",
-    "labels": [
-      "enhancement",
-      "beginner",
-      "config",
-      "privacy",
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/7973",
-    "publishedAt": "2023-09-11T14:59:59Z",
-    "title": "[bug]: Channel not propagating in gossip and unable to update policies",
-    "labels": [
-      "bug",
-      "needs triage"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -978,18 +722,6 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/8157",
-    "publishedAt": "2023-11-07T14:22:30Z",
-    "title": "[bug]: LND with Neutrino never fully starts up",
-    "labels": [
-      "bug",
-      "neutrino",
-      "networking",
-      "P2"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/8172",
     "publishedAt": "2023-11-13T12:08:29Z",
     "title": "[bug]: Do not allow replayed HTLCs to be intercepted.",
@@ -1011,16 +743,6 @@
       "beginner",
       "routing",
       "payments"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/8299",
-    "publishedAt": "2023-12-20T13:45:46Z",
-    "title": "[bug]: `max-commit-fee-rate-anchors` ignored at force close, much higher fee used.",
-    "labels": [
-      "bug",
-      "needs triage"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -1064,33 +786,12 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
   {
-    "url": "https://github.com/lightningnetwork/lnd/issues/8366",
-    "publishedAt": "2024-01-10T11:31:42Z",
-    "title": "[bug]: Restoring a node with SCB file after counterparty force closed channel long ago generates a pending_force_close channel that remains forever",
-    "labels": [
-      "bug",
-      "SCB"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
     "url": "https://github.com/lightningnetwork/lnd/issues/8368",
     "publishedAt": "2024-01-10T17:42:42Z",
     "title": "pathfinding/routing",
     "labels": [
       "bug",
       "needs triage"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
-  },
-  {
-    "url": "https://github.com/lightningnetwork/lnd/issues/8383",
-    "publishedAt": "2024-01-15T15:13:28Z",
-    "title": "[bug]: a height hint greater than 0 must be provided",
-    "labels": [
-      "bug",
-      "P2",
-      "init"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   },
@@ -1137,6 +838,300 @@
       "neutrino",
       "P2",
       "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8461",
+    "publishedAt": "2024-02-05T18:26:00Z",
+    "title": "[bug]: htlcswitch should reforward settle/fails from closed channels",
+    "labels": [
+      "bug",
+      "advanced",
+      "htlcswitch",
+      "force closes"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8470",
+    "publishedAt": "2024-02-09T16:21:12Z",
+    "title": "[feature]: BumpFee: return raw tx hex on success",
+    "labels": [
+      "enhancement",
+      "rpc",
+      "beginner",
+      "fees",
+      "good first issue"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8530",
+    "publishedAt": "2024-03-07T18:30:12Z",
+    "title": "[bug]: lncli listpayments --count_total_payments should honor --creation_date_start --creation_date_end",
+    "labels": [
+      "bug",
+      "rpc",
+      "beginner",
+      "good first issue",
+      "lncli"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8531",
+    "publishedAt": "2024-03-07T22:32:37Z",
+    "title": "[bug]: Channel force close due to short database outage and resulting channel failure",
+    "labels": [
+      "bug",
+      "database",
+      "P1",
+      "force closes"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8579",
+    "publishedAt": "2024-03-25T12:15:08Z",
+    "title": "[bug]: `lntest` hangs when attempting to create a 7th LND node",
+    "labels": [
+      "bug",
+      "itests",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8638",
+    "publishedAt": "2024-04-10T10:49:25Z",
+    "title": "[bug]: LND panics when calling `kvdb.lastCompactionDate`.",
+    "labels": [
+      "bug",
+      "database",
+      "P2",
+      "kvdb"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8639",
+    "publishedAt": "2024-04-10T17:23:31Z",
+    "title": "[bug]: FAILURE_REASON_NO_ROUTE to a local channel - not fee related",
+    "labels": [
+      "bug",
+      "graph",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8645",
+    "publishedAt": "2024-04-13T05:33:15Z",
+    "title": "[bug]: Remote Signer: ImportAccount: incorrect coin type in derivation path on testnet",
+    "labels": [
+      "bug",
+      "wallet",
+      "P2",
+      "psbt"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8666",
+    "publishedAt": "2024-04-19T13:32:57Z",
+    "title": "[bug]: Race in SQLITE dependency ?",
+    "labels": [
+      "bug",
+      "database",
+      "data-race",
+      "dependencies"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8671",
+    "publishedAt": "2024-04-20T00:02:49Z",
+    "title": "[bug]: Running LND becomes very slow on macOS (arm64) compared to Linux (ubuntu 22.04 aarch64)",
+    "labels": [
+      "bug",
+      "P3",
+      "performance"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8679",
+    "publishedAt": "2024-04-23T14:36:42Z",
+    "title": "[documentation] [feature]: sample-lnd.conf makes misleading or wrong statement about env var expansion",
+    "labels": [
+      "bug",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8725",
+    "publishedAt": "2024-05-04T18:59:09Z",
+    "title": "[bug]: Ping time is not accurate",
+    "labels": [
+      "bug",
+      "P3",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8737",
+    "publishedAt": "2024-05-07T18:38:22Z",
+    "title": "[bug]: sweep: BumpFee can cause transaction conflicts",
+    "labels": [
+      "bug",
+      "P2",
+      "utxo sweeping"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8757",
+    "publishedAt": "2024-05-14T20:27:07Z",
+    "title": "[bug]: sweep: AddWalletInputs modifies BudgetInputSet when error occurs",
+    "labels": [
+      "bug",
+      "P1",
+      "utxo sweeping"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8772",
+    "publishedAt": "2024-05-22T18:35:59Z",
+    "title": "[bug]: lnwallet: `LocalBalanceDust`/`RemoteBalanceDust` false negatives -- omitting commitment fees",
+    "labels": [
+      "bug",
+      "wallet",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8801",
+    "publishedAt": "2024-06-01T05:37:44Z",
+    "title": "[bug]: externalhosts does not advertize IPv4+IPv6 domain",
+    "labels": [
+      "bug",
+      "p2p",
+      "beginner",
+      "good first issue",
+      "P2"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8806",
+    "publishedAt": "2024-06-03T10:34:09Z",
+    "title": "[Failing test]:  Unexpected number of transactions in mempool in neutrino channel force closure itest",
+    "labels": [
+      "bug",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8870",
+    "publishedAt": "2024-06-26T12:42:46Z",
+    "title": "gossip: node announcement ignored because node not in graph",
+    "labels": [
+      "bug",
+      "routing",
+      "gossip",
+      "taproot chans"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8928",
+    "publishedAt": "2024-07-23T13:50:43Z",
+    "title": "[bug]: panic in `Broadcaster` found in CI",
+    "labels": [
+      "bug",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8932",
+    "publishedAt": "2024-07-23T20:47:57Z",
+    "title": "[bug]: watchtower sessions are not reused after deactivation/activation",
+    "labels": [
+      "bug",
+      "watchtower",
+      "P2"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/8989",
+    "publishedAt": "2024-08-07T14:16:13Z",
+    "title": "Payment lifecycle is not fully resumed after restart",
+    "labels": [
+      "bug",
+      "intermediate",
+      "payments",
+      "P3"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/9043",
+    "publishedAt": "2024-08-28T19:18:19Z",
+    "title": "[bug]: pong response failure",
+    "labels": [
+      "bug",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/9055",
+    "publishedAt": "2024-09-01T22:45:38Z",
+    "title": "[bug]: Failed recover on-chain testnet funds with neutrino",
+    "labels": [
+      "bug",
+      "neutrino"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/9093",
+    "publishedAt": "2024-09-12T15:28:23Z",
+    "title": "[bug]: Fault in the docker reproducible release-build, compile process on macOS",
+    "labels": [
+      "bug",
+      "needs triage"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/9101",
+    "publishedAt": "2024-09-13T11:44:15Z",
+    "title": "[bug]: `minFeeRate`  not capped by budget in `LinearFeeFunction`",
+    "labels": [
+      "bug",
+      "fees",
+      "utxo sweeping"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
+  },
+  {
+    "url": "https://github.com/lightningnetwork/lnd/issues/9108",
+    "publishedAt": "2024-09-16T17:05:52Z",
+    "title": "[bug]: Newly generated wallet chain sync sometimes takes a very long time",
+    "labels": [
+      "bug",
+      "wallet",
+      "backend",
+      "init"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/13424735?v=4"
   }

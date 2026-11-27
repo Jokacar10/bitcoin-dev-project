@@ -3,7 +3,8 @@ import { useState, useCallback, useEffect } from "react"
 import * as bitcoin from "bitcoinjs-lib"
 import clsx from "clsx"
 import { Copy, Check, RefreshCw, Hash, Info, ArrowRight } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+import * as m from "framer-motion/m"
+import { AnimatePresence } from "framer-motion"
 import bs58 from "bs58"
 
 // Define network types
@@ -301,7 +302,7 @@ const AddressGenerator = () => {
     }
 
     return (
-        <div className="bg-white dark:bg-vscode-background-dark rounded-xl max-w-4xl mx-auto border border-vscode-border-light dark:border-vscode-border-dark shadow-lg overflow-hidden">
+        <div className="bg-brand-card dark:bg-vscode-background-dark rounded-xl max-w-4xl mx-auto border border-vscode-border-light dark:border-vscode-border-dark shadow-lg overflow-hidden">
             {/* Simplified Header with Network Toggle */}
             <div className="bg-gradient-to-r from-orange-500 to-dark-200 p-3 text-white flex justify-between items-center">
                 <div className="flex items-center gap-2">
@@ -337,13 +338,13 @@ const AddressGenerator = () => {
             {/* Simplified Information Panel */}
             <AnimatePresence>
                 {showInfo && (
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         className="overflow-hidden"
                     >
-                        <div className="p-2 bg-gray-50 dark:bg-gray-800/50 border-b border-vscode-border-light dark:border-vscode-border-dark">
+                        <div className="p-2 bg-brand-gray dark:bg-gray-800/50 border-b border-vscode-border-light dark:border-vscode-border-dark">
                             <h3 className="font-medium text-vscode-text-light dark:text-vscode-text-dark text-sm">
                                 {selectedAddressType?.name} -{" "}
                                 {selectedAddressType?.description}
@@ -364,7 +365,7 @@ const AddressGenerator = () => {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </m.div>
                 )}
             </AnimatePresence>
 
@@ -383,7 +384,7 @@ const AddressGenerator = () => {
                                     "py-2 px-3 text-center rounded-md text-sm font-medium transition-colors flex flex-col items-center justify-center h-16",
                                     addressType === type.id
                                         ? "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-b-2 border-orange-500 shadow-sm"
-                                        : "bg-gray-100 dark:bg-gray-800 text-vscode-text-light dark:text-vscode-text-dark hover:bg-orange-50 dark:hover:bg-orange-900/10"
+                                        : "bg-brand-gray dark:bg-gray-800 text-vscode-text-light dark:text-vscode-text-dark hover:bg-orange-50 dark:hover:bg-orange-900/10"
                                 )}
                             >
                                 <span className="font-bold">{type.name}</span>
@@ -412,7 +413,7 @@ const AddressGenerator = () => {
                                         onClick={() =>
                                             setInputData(example.value)
                                         }
-                                        className="text-sm py-1 px-2.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-md border border-gray-200 dark:border-gray-700 hover:bg-orange-50 dark:hover:bg-orange-900/10"
+                                        className="text-sm py-1 px-2.5 bg-brand-gray dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-md border border-brand-gray-100 dark:border-gray-700 hover:bg-orange-50 dark:hover:bg-orange-900/10"
                                         title={example.description}
                                     >
                                         {i + 1}
@@ -436,7 +437,7 @@ const AddressGenerator = () => {
                             value={inputData}
                             onChange={(e) => setInputData(e.target.value)}
                             placeholder={`Enter ${selectedAddressType?.input || "data"}...`}
-                            className="w-full bg-white dark:bg-gray-800 rounded-md px-3 py-2.5 text-sm border border-gray-200 dark:border-gray-700"
+                            className="w-full bg-brand-card dark:bg-gray-800 rounded-md px-3 py-2.5 text-sm border border-brand-gray-100 dark:border-gray-700"
                         />
                     </div>
                 </div>
@@ -461,7 +462,7 @@ const AddressGenerator = () => {
                 <div className="mb-4">
                     {!isSegwitAddress() ? (
                         // Base58Check components - simplified
-                        <div className="grid grid-cols-12 gap-2 bg-gray-50 dark:bg-gray-800/40 p-3 rounded-lg border border-gray-200 dark:border-gray-700">
+                        <div className="grid grid-cols-12 gap-2 bg-brand-gray dark:bg-gray-800/40 p-3 rounded-lg border border-brand-gray-100 dark:border-gray-700">
                             <div className="col-span-2">
                                 <label className="block text-xs mb-1 text-gray-500 dark:text-gray-400">
                                     Prefix
@@ -470,7 +471,7 @@ const AddressGenerator = () => {
                                     type="text"
                                     value={prefix}
                                     onChange={(e) => setPrefix(e.target.value)}
-                                    className="w-full bg-white dark:bg-gray-800 rounded px-2 py-1 text-xs border border-gray-200 dark:border-gray-700"
+                                    className="w-full bg-brand-card dark:bg-gray-800 rounded px-2 py-1 text-xs border border-brand-gray-100 dark:border-gray-700"
                                 />
                             </div>
                             <div className="col-span-8">
@@ -483,7 +484,7 @@ const AddressGenerator = () => {
                                     onChange={(e) =>
                                         setInputData(e.target.value)
                                     }
-                                    className="w-full bg-white dark:bg-gray-800 rounded px-2 py-1 text-xs border border-gray-200 dark:border-gray-700"
+                                    className="w-full bg-brand-card dark:bg-gray-800 rounded px-2 py-1 text-xs border border-brand-gray-100 dark:border-gray-700"
                                 />
                             </div>
                             <div className="col-span-2">
@@ -494,13 +495,13 @@ const AddressGenerator = () => {
                                     type="text"
                                     value={checksum || "auto"}
                                     readOnly
-                                    className="w-full bg-white dark:bg-gray-800 rounded px-2 py-1 text-xs border border-gray-200 dark:border-gray-700 opacity-75"
+                                    className="w-full bg-brand-card dark:bg-gray-800 rounded px-2 py-1 text-xs border border-brand-gray-100 dark:border-gray-700 opacity-75"
                                 />
                             </div>
                         </div>
                     ) : (
                         // Bech32 components - simplified
-                        <div className="grid grid-cols-12 gap-2 bg-gray-50 dark:bg-gray-800/40 p-3 rounded-lg border border-gray-200 dark:border-gray-700">
+                        <div className="grid grid-cols-12 gap-2 bg-brand-gray dark:bg-gray-800/40 p-3 rounded-lg border border-brand-gray-100 dark:border-gray-700">
                             <div className="col-span-2">
                                 <label className="block text-xs mb-1 text-gray-500 dark:text-gray-400">
                                     HRP
@@ -509,7 +510,7 @@ const AddressGenerator = () => {
                                     type="text"
                                     value={network === "mainnet" ? "bc" : "tb"}
                                     readOnly
-                                    className="w-full bg-white dark:bg-gray-800 rounded px-2 py-1 text-xs border border-gray-200 dark:border-gray-700 opacity-75"
+                                    className="w-full bg-brand-card dark:bg-gray-800 rounded px-2 py-1 text-xs border border-brand-gray-100 dark:border-gray-700 opacity-75"
                                 />
                             </div>
                             <div className="col-span-2">
@@ -528,7 +529,7 @@ const AddressGenerator = () => {
                                         setWitnessVersion(e.target.value)
                                     }
                                     readOnly={addressType === "p2tr"}
-                                    className="w-full bg-white dark:bg-gray-800 rounded px-2 py-1 text-xs border border-gray-200 dark:border-gray-700"
+                                    className="w-full bg-brand-card dark:bg-gray-800 rounded px-2 py-1 text-xs border border-brand-gray-100 dark:border-gray-700"
                                 />
                             </div>
                             <div className="col-span-6">
@@ -542,7 +543,7 @@ const AddressGenerator = () => {
                                     onChange={(e) =>
                                         setInputData(e.target.value)
                                     }
-                                    className="w-full bg-white dark:bg-gray-800 rounded px-2 py-1 text-xs border border-gray-200 dark:border-gray-700"
+                                    className="w-full bg-brand-card dark:bg-gray-800 rounded px-2 py-1 text-xs border border-brand-gray-100 dark:border-gray-700"
                                 />
                             </div>
                             <div className="col-span-2">
@@ -553,7 +554,7 @@ const AddressGenerator = () => {
                                     type="text"
                                     value="auto"
                                     readOnly
-                                    className="w-full bg-white dark:bg-gray-800 rounded px-2 py-1 text-xs border border-gray-200 dark:border-gray-700 opacity-75"
+                                    className="w-full bg-brand-card dark:bg-gray-800 rounded px-2 py-1 text-xs border border-brand-gray-100 dark:border-gray-700 opacity-75"
                                 />
                             </div>
                         </div>
@@ -582,7 +583,7 @@ const AddressGenerator = () => {
 
                     {/* PRESERVED: Encode Button - but simplified */}
                     <div className="flex justify-center mb-3">
-                        <div className="inline-block px-3 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded">
+                        <div className="inline-block px-3 py-1 text-xs font-medium bg-brand-gray dark:bg-gray-800 border border-brand-gray-100 dark:border-gray-700 rounded">
                             {isSegwitAddress()
                                 ? addressType === "p2tr"
                                     ? "Encode Bech32m"
@@ -638,7 +639,7 @@ const AddressGenerator = () => {
                         className={`w-full px-3 py-2 text-center break-all border rounded ${
                             generatedAddress
                                 ? "bg-green-50 dark:bg-green-900/10 border-green-300 dark:border-green-700"
-                                : "bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700"
+                                : "bg-brand-gray dark:bg-gray-800 border-brand-gray-100 dark:border-gray-700"
                         }`}
                     >
                         <div className="flex items-center justify-center text-sm font-mono">
@@ -649,7 +650,7 @@ const AddressGenerator = () => {
                                 onClick={() =>
                                     copyToClipboard(generatedAddress)
                                 }
-                                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white dark:bg-gray-800 p-1 rounded border border-gray-200 dark:border-gray-700 text-orange-500 hover:text-orange-600 transition-colors"
+                                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-brand-card dark:bg-gray-800 p-1 rounded border border-brand-gray-100 dark:border-gray-700 text-orange-500 hover:text-orange-600 transition-colors"
                                 title="Copy to clipboard"
                             >
                                 {copied ? (

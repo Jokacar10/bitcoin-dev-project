@@ -16,7 +16,9 @@ export const metadata = genPageMetadata({
     openGraph: {
         images: [
             {
-                url: "https://bitcoindevs.xyz/images/pages-thumbnails/decoding-bitcoin.jpg",
+                url: "https://bitcoindevs.xyz/images/pages-thumbnails/decoding-bitcoin.webp",
+                width: 1200,
+                height: 630,
                 alt: "Bitcoin career"
             }
         ],
@@ -28,7 +30,7 @@ export const metadata = genPageMetadata({
     },
     twitter: {
         images: [
-            "https://bitcoindevs.xyz/images/pages-thumbnails/decoding-bitcoin.jpg"
+            "https://bitcoindevs.xyz/images/pages-thumbnails/decoding-bitcoin.webp"
         ],
         card: "summary_large_image",
         title: "Decoding Bitcoin",
@@ -45,6 +47,12 @@ export default async function Page() {
     const { prev, next, post, authorDetails, mainContent, jsonLd } =
         getTopicData(slug)
 
+    const pageComponents = Object.fromEntries(
+        Object.entries(components).filter(([key]) =>
+            (post.usedComponents as string[]).includes(key)
+        )
+    )
+
     return (
         <>
             <script
@@ -59,7 +67,7 @@ export default async function Page() {
             >
                 <MDXLayoutRenderer
                     code={post.body.code}
-                    components={components}
+                    components={pageComponents}
                     toc={post.toc}
                 />
             </TopicLayout>

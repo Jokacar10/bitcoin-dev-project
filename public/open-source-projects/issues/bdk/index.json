@@ -21,21 +21,310 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   },
   {
-    "url": "https://github.com/bitcoindevkit/bdk/issues/1848",
-    "publishedAt": "2025-02-20T16:30:42Z",
-    "title": "`FilterIter` may not handle reorgs properly.",
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2088",
+    "publishedAt": "2026-01-03T21:39:04Z",
+    "title": "`CanonicalReason::Assumed` should map to `ChainPosition::Confirmed` if a direct anchor exists",
     "labels": [
       "bug",
-      "tests"
+      "stale"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   },
   {
-    "url": "https://github.com/bitcoindevkit/bdk/issues/1933",
-    "publishedAt": "2025-03-03T19:50:57Z",
-    "title": "Display implementations should not expose `Debug` output",
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2217",
+    "publishedAt": "2026-05-28T16:56:08Z",
+    "title": "KeychainTxOutIndex returns stale SPK cache entries in per-call ChangeSets",
     "labels": [
-      "good first issue"
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2251",
+    "publishedAt": "2026-08-01T17:26:39Z",
+    "title": "KeychainTxOutIndex::lookahead_to_target panics (overflow) or silently no-ops on target_index = u32::MAX",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2268",
+    "publishedAt": "2026-09-01T16:25:32Z",
+    "title": "Improve safety of FilterIter",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2270",
+    "publishedAt": "2026-09-03T18:58:25Z",
+    "title": "TxGraph:: apply_changeset ignores ChangeSet::first_seen",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2271",
+    "publishedAt": "2026-09-04T12:40:40Z",
+    "title": "Equal `seen_at` and `evicted_at` within one sync hides present tx",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2272",
+    "publishedAt": "2026-09-05T04:58:03Z",
+    "title": "bdk_bitcoind_rpc Emitter fails to report evicted transactions after a reorg (Ghost Pending Payments)",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2274",
+    "publishedAt": "2026-09-07T13:24:37Z",
+    "title": "`TxGraph::insert_txout` overwrites existing floating txout but returns empty `ChangeSet`",
+    "labels": [
+      "bug",
+      "discussion"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2277",
+    "publishedAt": "2026-09-07T15:14:26Z",
+    "title": "`KeychainTxOutIndex` panics on overlapping descriptors (non-index-0 spk)",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2278",
+    "publishedAt": "2026-09-08T12:26:03Z",
+    "title": "`IndexedTxGraph::apply_block` does not check merkle root",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2279",
+    "publishedAt": "2026-09-09T12:13:18Z",
+    "title": "`SpkTxOutIndex::insert_spk` leaves stale mappings when reusing an index",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2280",
+    "publishedAt": "2026-09-09T12:25:17Z",
+    "title": "Clock changes can hide present transactions or keep dropped transactions pending",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2281",
+    "publishedAt": "2026-09-09T12:33:47Z",
+    "title": "`KeychainTxOutIndex::insert_descriptor` panics on unsupported derivation paths",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2282",
+    "publishedAt": "2026-09-09T12:45:44Z",
+    "title": "bdk_bitcoind_rpc: Unbounded spin loop, memory growth, and missing txid validation in Emitter::mempool_at",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2285",
+    "publishedAt": "2026-09-10T13:05:10Z",
+    "title": "file_store: new stores are readable by other users under common umasks",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2286",
+    "publishedAt": "2026-09-10T13:08:17Z",
+    "title": "Canonical view admits conflicting transactions with null prevouts",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2288",
+    "publishedAt": "2026-09-10T13:16:56Z",
+    "title": "Duplicate inputs inflate sent amounts and calculated fees",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2290",
+    "publishedAt": "2026-09-10T13:32:37Z",
+    "title": "Emitter silently replaces the caller’s genesis on a network mismatch",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2291",
+    "publishedAt": "2026-09-10T13:34:55Z",
+    "title": "Zero batch size or parallel requests silently skips scans",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2292",
+    "publishedAt": "2026-09-10T13:49:50Z",
+    "title": "Smaller invalid witnesses replace usable witnesses and cannot be restored",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2293",
+    "publishedAt": "2026-09-10T17:04:51Z",
+    "title": "Electrum outpoint sync silently ignores transaction fetch errors",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2294",
+    "publishedAt": "2026-09-10T17:05:57Z",
+    "title": "Electrum tip height is truncated with `as u32`",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2295",
+    "publishedAt": "2026-09-10T17:12:01Z",
+    "title": "`full_scan` never terminates when the server reports history for every script",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2301",
+    "publishedAt": "2026-09-11T10:27:06Z",
+    "title": "Unconfirmed spend with an invalid witness removes a confirmed UTXO from the balance",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2302",
+    "publishedAt": "2026-09-11T10:32:16Z",
+    "title": "Electrum sync forwards unrelated history transactions and its caches never evict",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2304",
+    "publishedAt": "2026-09-11T10:54:46Z",
+    "title": "Electrum sync leaves a transaction without anchor or `seen_at` when its merkle proof fails",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2305",
+    "publishedAt": "2026-09-11T12:37:14Z",
+    "title": "Electrum batch responses are paired with `zip` without length checks",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2306",
+    "publishedAt": "2026-09-11T14:45:44Z",
+    "title": "file_store: oversized entry length prefix panics `Store::load` instead of returning an error",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2307",
+    "publishedAt": "2026-09-13T15:43:18Z",
+    "title": "file_store: `Store::load` never terminates when a changeset entry decodes to zero bytes",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2308",
+    "publishedAt": "2026-09-13T15:46:08Z",
+    "title": "file_store: `Store::append` through a second handle overwrites changesets appended via another handle",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2309",
+    "publishedAt": "2026-09-13T15:50:49Z",
+    "title": "`LocalChain::apply_changeset` silently replaces the genesis block",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2310",
+    "publishedAt": "2026-09-13T15:55:33Z",
+    "title": "Electrum: `batch_fetch_anchors` keeps returning the pre-reorg anchor once header and anchor caches are populated",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2312",
+    "publishedAt": "2026-09-13T21:09:25Z",
+    "title": "Electrum: `chain_update` inserts anchor block hashes that were not checked against the tip chain",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
+  },
+  {
+    "url": "https://github.com/bitcoindevkit/bdk/issues/2326",
+    "publishedAt": "2026-09-27T17:01:25Z",
+    "title": "BDK logo svg",
+    "labels": [
+      "bug"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   }

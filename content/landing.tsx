@@ -1,29 +1,27 @@
-import { BitcoinIcon } from "lucide-react"
+import { BitcoinIcon, Bitcoin, Github } from "lucide-react"
 
-import screenshotTopics from "@/public/images/hero/screenshots/topics.png"
-import screenshotGoodFirstIssues from "@/public/images/hero/screenshots/good-first-issues.png"
-import screenshotBitcoinSearch from "@/public/images/hero/screenshots/bitcoin_search.png"
-import screenshotBitcoinTLDR from "@/public/images/hero/screenshots/bitcoin_tldr.png"
-import screenshotBitcoinTranscript from "@/public/images/hero/screenshots/bitcoin-transacripts.png"
-import screenshotBitcoinTranscriptReview from "@/public/images/hero/screenshots/bitcoin-transcript-review.png"
-import screenshotChatBTC from "@/public/images/hero/screenshots/chatBTC.png"
-import screenshotSavingSatoshi from "@/public/images/hero/screenshots/saving_satoshi.png"
-import screenshotDecodingBitcoin from "@/public/images/hero/screenshots/decoding-bitcoin.png"
-import screenshotBTCdemy from "@/public/images/hero/screenshots/btc-demy.png"
-import screenshotWarnet from "@/public/images/hero/screenshots/warnet.png"
-import screenshotSimLN from "@/public/images/hero/screenshots/simln.png"
-import logoBitcoinSearch from "@/public/images/tools/bitcoin-search.jpg"
-import logoBitcoinTLDR from "@/public/images/tools/bitcoin-tldr.jpg"
-import logoBitcoinTranscript from "@/public/images/tools/bitcoin-transcripts.jpg"
-import logoTrRev from "@/public/images/tools/bitcoin-transcripts-review.jpg"
-import logoChatBTC from "@/public/images/tools/chat-btc.jpg"
-import logoSavingSatoshi from "@/public/images/tools/saving-satoshi.jpg"
-import logoBTCdemy from "@/public/images/tools/btc-demy.png"
+import screenshotTopics from "@/public/images/hero/screenshots/topics.webp"
+import screenshotGoodFirstIssues from "@/public/images/hero/screenshots/good-first-issues.webp"
+import screenshotBitcoinSearch from "@/public/images/hero/screenshots/bitcoin_search.webp"
+import screenshotBitcoinTLDR from "@/public/images/hero/screenshots/bitcoin_tldr.webp"
+import screenshotBitcoinTranscript from "@/public/images/hero/screenshots/bitcoin-transacripts.webp"
+import screenshotBitcoinTranscriptReview from "@/public/images/hero/screenshots/bitcoin-transcript-review.webp"
+import screenshotSavingSatoshi from "@/public/images/hero/screenshots/saving_satoshi.webp"
+import screenshotDecodingBitcoin from "@/public/images/hero/screenshots/decoding-bitcoin.webp"
+import screenshotBTCdemy from "@/public/images/hero/screenshots/btc-demy.webp"
+import screenshotWarnet from "@/public/images/hero/screenshots/warnet.webp"
+import screenshotSimLN from "@/public/images/hero/screenshots/simln.webp"
+import logoBitcoinSearch from "@/public/images/tools/bitcoin-search.webp"
+import logoBitcoinTLDR from "@/public/images/tools/bitcoin-tldr.webp"
+import logoBitcoinTranscript from "@/public/images/tools/bitcoin-transcripts.webp"
+import logoTrRev from "@/public/images/tools/bitcoin-transcripts-review.webp"
+
+import logoSavingSatoshi from "@/public/images/tools/saving-satoshi.webp"
+import logoBTCdemy from "@/public/images/tools/btc-demy.webp"
 import discordIcon from "@/public/images/hero/socials/discord.svg"
 import githubIcon from "@/public/images/hero/socials/github.svg"
 import xIcon from "@/public/images/hero/socials/x.svg"
-import { GitHubLogoIcon } from "@radix-ui/react-icons"
-import { Bitcoin } from "lucide-react"
+
 import {
     BoltIcon,
     ChartPieIcon,
@@ -74,6 +72,7 @@ export const primaryFeatures = [
         description:
             "Breaking complex Decoding Bitcoin in a simple way. A resource rich with Visuals and animations to simplify complex technical Bitcoin concepts",
         image: screenshotTopics,
+        imageAlt: "Decoding Bitcoin topics interface screenshot",
         released: false,
         checks: [
             "Collection of visuals and animations to help you",
@@ -85,6 +84,7 @@ export const primaryFeatures = [
         description:
             "Explore curated bitcoin open source software (₿OSS) projects to get off of ₿OSS 0.",
         image: screenshotGoodFirstIssues,
+        imageAlt: "Good First Issues project issue explorer screenshot",
         released: true,
         checks: [
             "Explore curated ₿OSS projects",
@@ -100,6 +100,7 @@ export const tools: Array<IFeature> = [
             "The interactive learning experience to help you become confident in Bitcoin development.",
         summary: "",
         image: screenshotDecodingBitcoin,
+        imageAlt: "Decoding Bitcoin interactive learning interface screenshot",
         link: "https://bitcoindevs.xyz/decoding"
     },
     {
@@ -107,6 +108,7 @@ export const tools: Array<IFeature> = [
         description: "The Bitcoiner's Intro to Rust",
         summary: "",
         image: screenshotBTCdemy,
+        imageAlt: "BTCdemy Bitcoin and Rust course homepage screenshot",
         icon: logoBTCdemy,
         link: "https://btcdemy.thinkific.com/"
     },
@@ -115,6 +117,7 @@ export const tools: Array<IFeature> = [
         description: "Save bitcoin by coding through a sci-fi epic",
         summary: "",
         image: screenshotSavingSatoshi,
+        imageAlt: "Saving Satoshi coding game homepage screenshot",
         icon: logoSavingSatoshi,
         link: "https://savingsatoshi.com"
     },
@@ -123,6 +126,8 @@ export const tools: Array<IFeature> = [
         description: "Explore vetted Free Open Source Software (FOSS) projects",
         summary: "",
         image: screenshotGoodFirstIssues,
+        imageAlt:
+            "Good First Issues Bitcoin open source issues dashboard screenshot",
         icon: logoBitcoinTranscript,
         link: "https://bitcoindevs.xyz/good-first-issues"
     },
@@ -132,6 +137,7 @@ export const tools: Array<IFeature> = [
             "Earn sats by reviewing and editing AI-generated transcripts",
         summary: "",
         image: screenshotBitcoinTranscriptReview,
+        imageAlt: "Bitcoin Transcripts Review editing dashboard screenshot",
         icon: logoBitcoinTranscript,
         link: "https://review.btctranscripts.com"
     },
@@ -141,6 +147,7 @@ export const tools: Array<IFeature> = [
         description: "The technical bitcoin search engine we deserve.",
         summary: "",
         image: screenshotBitcoinSearch,
+        imageAlt: "Bitcoin Search technical search engine screenshot",
         icon: logoBitcoinSearch,
         link: "https://bitcoinsearch.xyz"
     },
@@ -150,6 +157,7 @@ export const tools: Array<IFeature> = [
             "Making it easier to engage with Delving Bitcoin, and Bitcoin and Lightning-dev mailing lists",
         summary: "",
         image: screenshotBitcoinTLDR,
+        imageAlt: "Bitcoin TLDR mailing list summary screenshot",
         icon: logoBitcoinTLDR,
         link: "https://tldr.bitcoinsearch.xyz"
     },
@@ -159,16 +167,9 @@ export const tools: Array<IFeature> = [
             "Historical archives of transcribed talks, podcasts and lectures",
         summary: "",
         image: screenshotBitcoinTranscript,
+        imageAlt: "Bitcoin Transcripts archive screenshot",
         icon: logoBitcoinTranscript,
         link: "https://btctranscripts.com"
-    },
-    {
-        name: "ChatBTC",
-        description: "Chat with your favorite bitcoin sources and authors.",
-        summary: "",
-        image: screenshotChatBTC,
-        icon: logoChatBTC,
-        link: "https://chat.bitcoinsearch.xyz"
     },
     {
         name: "Warnet",
@@ -176,6 +177,7 @@ export const tools: Array<IFeature> = [
             "Monitor and analyze the emergent behaviors of P2P networks",
         summary: "",
         image: screenshotWarnet,
+        imageAlt: "Warnet Bitcoin network monitoring dashboard screenshot",
         link: "https://warnet.dev"
     },
     {
@@ -183,6 +185,7 @@ export const tools: Array<IFeature> = [
         description: "Instantly simulate real-world Lightning network activity",
         summary: "",
         image: screenshotSimLN,
+        imageAlt: "SimLN Lightning network simulation dashboard screenshot",
         link: "https://simln.dev"
     }
 ]
@@ -198,7 +201,7 @@ export const values = [
         description:
             "Everything we do is open source. We want your reviews and contributions",
         href: "https://github.com/bitcoin-dev-project/bitcoin-dev-project",
-        icon: GitHubLogoIcon
+        icon: Github
     },
     {
         name: "BITCOIN TECH",
@@ -210,11 +213,6 @@ export const values = [
 
 export const hero = [
     [
-        {
-            name: "ChatBTC",
-            logo: logoChatBTC,
-            url: "https://chat.bitcoinsearch.xyz"
-        },
         {
             name: "Bitcoin Search",
             logo: logoBitcoinSearch,
@@ -246,13 +244,7 @@ export const navigation = {
             name: "X",
             href: "https://x.com/Bitcoin_Devs",
             icon: (props: any) => (
-                <Image
-                    src={xIcon}
-                    alt="Discord"
-                    width={20}
-                    height={20}
-                    {...props}
-                />
+                <Image src={xIcon} alt="X" width={20} height={20} {...props} />
             )
         },
         {
@@ -261,7 +253,7 @@ export const navigation = {
             icon: (props: any) => (
                 <Image
                     src={githubIcon}
-                    alt="Discord"
+                    alt="GitHub"
                     width={20}
                     height={20}
                     {...props}

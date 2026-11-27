@@ -119,18 +119,45 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/1356600?u=332766210005f71b61f09f64ab2d6b9aad32f160&v=4"
   },
   {
-    "url": "https://github.com/jamaljsr/polar/issues/1179",
-    "publishedAt": "2025-04-07T22:53:59Z",
-    "title": "Bug: Unable to connect to CLN node using grpc",
+    "url": "https://github.com/jamaljsr/polar/issues/1212",
+    "publishedAt": "2025-05-19T22:27:36Z",
+    "title": "Bug: eclair v0.12.0 docker image: eclair crashes when trying to open channels",
     "labels": [
       "bug"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/1356600?u=332766210005f71b61f09f64ab2d6b9aad32f160&v=4"
   },
   {
-    "url": "https://github.com/jamaljsr/polar/issues/1212",
-    "publishedAt": "2025-05-19T22:27:36Z",
-    "title": "Bug: eclair v0.12.0 docker image: eclair crashes when trying to open channels",
+    "url": "https://github.com/jamaljsr/polar/issues/1358",
+    "publishedAt": "2026-02-01T21:52:39Z",
+    "title": "Bug: Route not found and usability improvement",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/1356600?u=332766210005f71b61f09f64ab2d6b9aad32f160&v=4"
+  },
+  {
+    "url": "https://github.com/jamaljsr/polar/issues/1359",
+    "publishedAt": "2026-02-04T16:10:47Z",
+    "title": "Bug: terminal fails to open with LND custom node",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/1356600?u=332766210005f71b61f09f64ab2d6b9aad32f160&v=4"
+  },
+  {
+    "url": "https://github.com/jamaljsr/polar/issues/1383",
+    "publishedAt": "2026-07-30T09:05:46Z",
+    "title": "Bug: Insufficient Balance Error Not Displayed When Attempting Payment with Zero/Insufficient Sats",
+    "labels": [
+      "bug"
+    ],
+    "imageUrl": "https://avatars.githubusercontent.com/u/1356600?u=332766210005f71b61f09f64ab2d6b9aad32f160&v=4"
+  },
+  {
+    "url": "https://github.com/jamaljsr/polar/issues/1396",
+    "publishedAt": "2026-09-22T07:25:37Z",
+    "title": "Bug: Open Channel: unfriendly LND error shown when source node balance is insufficient",
     "labels": [
       "bug"
     ],

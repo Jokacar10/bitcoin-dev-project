@@ -14,6 +14,38 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
+                // Temporary
+                "brand-card-bg": "var(--brand-card-bg)",
+                "brand-green": "var(--brand-green)",
+                "brand-light-100": "var(--brand-light-100)",
+                "brand-dark-100": "var(--brand-dark-100)",
+                "brand-orange-100": "var(--brand-orange-100)",
+                brand: {
+                    DEFAULT: "#F6F0E6",
+                    stroke: {
+                        "on-base": "#E1DBD0"
+                    },
+                    orange: {
+                        DEFAULT: "#F6F0E6",
+                        100: "#EB5234"
+                    },
+                    dark: {
+                        DEFAULT: "#201E1E",
+                        100: "#201E1E"
+                    },
+
+                    gray: {
+                        DEFAULT: "#EFE9DE",
+                        100: "#E1DBD0",
+                        200: "#A9A49B",
+                        300: "#6C6C6C"
+                    },
+                    // get-funded card fill (lighter than brand-gray); from Figma
+                    card: "#FFFDF5",
+                    blue: {
+                        200: "#4B7389"
+                    }
+                },
                 orange: {
                     DEFAULT: "#f1760f",
                     "50": "#fff8eb",
@@ -70,18 +102,19 @@ const config: Config = {
                     "900": "#3b3b3e",
                     "950": "#1c1c1e"
                 },
+
                 // VS Code Theme Colors
                 vscode: {
                     background: {
-                        light: "#ffffff",
+                        light: "#F6F0E6", // brand cream — matches main site background
                         dark: "#1e1e1e"
                     },
                     navigation: {
-                        light: "#f0f0f0",
+                        light: "#EFE9DE", // brand gray — one step darker than background
                         dark: "#252526"
                     },
                     input: {
-                        light: "#f5f5f5",
+                        light: "#FFFDF5", // brand-card — warm near-white input
                         dark: "#3c3c3c"
                     },
                     text: {
@@ -89,11 +122,11 @@ const config: Config = {
                         dark: "#d4d4d4"
                     },
                     hover: {
-                        light: "#e1e1e1",
+                        light: "#E1DBD0", // brand-gray-100 — warm hover
                         dark: "#3c3c3c"
                     },
                     highlight: {
-                        light: "#f3f4f5",
+                        light: "#EFE9DE", // brand-gray — warm highlight
                         dark: "#2d2d2d"
                     },
                     selection: {
@@ -120,7 +153,7 @@ const config: Config = {
                     },
                     header: {
                         background: {
-                            light: "#f3f3f3",
+                            light: "#EFE9DE", // brand-gray — warm toolbar
                             dark: "#252526"
                         },
                         foreground: {
@@ -130,7 +163,7 @@ const config: Config = {
                     },
                     searchBar: {
                         background: {
-                            light: "#ffffff",
+                            light: "#FFFDF5", // brand-card — warm near-white
                             dark: "#1e1e1e"
                         },
                         foreground: {
@@ -140,7 +173,7 @@ const config: Config = {
                     },
                     navButton: {
                         background: {
-                            light: "#e1e1e1",
+                            light: "#E1DBD0", // brand-gray-100 — warm button
                             dark: "#3c3c3c"
                         },
                         foreground: {
@@ -149,7 +182,7 @@ const config: Config = {
                         }
                     },
                     container: {
-                        light: "#f3f3f3",
+                        light: "#EFE9DE", // brand-gray — warm panel
                         dark: "#252526"
                     },
                     success: {
@@ -161,15 +194,15 @@ const config: Config = {
                         dark: "#d32f2f" // Darker but not too intense red
                     },
                     file: {
-                        light: "#e1e1e1",
+                        light: "#E1DBD0", // brand-gray-100 — warm
                         dark: "#3c3c3c"
                     },
                     selectedFile: {
-                        light: "#007acc",
+                        light: "#f1760f", // brand orange — matches dark, active file
                         dark: "#f1760f"
                     },
                     sidebarBackground: {
-                        light: "#f3f3f3",
+                        light: "#EFE9DE", // brand-gray — warm sidebar
                         dark: "#252526"
                     },
                     sidebarForeground: {
@@ -177,7 +210,7 @@ const config: Config = {
                         dark: "#cccccc"
                     },
                     editorBackground: {
-                        light: "#ffffff",
+                        light: "#FFFDF5", // brand-card — warm near-white editor
                         dark: "#1e1e1e"
                     },
                     editorForeground: {
@@ -185,7 +218,7 @@ const config: Config = {
                         dark: "#d4d4d4"
                     },
                     titleBar: {
-                        light: "#e7e7e7",
+                        light: "#E1DBD0", // brand-gray-100 — warm title bar
                         dark: "#3c3c3c"
                     },
                     activityBar: {
@@ -197,7 +230,7 @@ const config: Config = {
                         dark: "#6b6b6b"
                     },
                     codeSnippetBackground: {
-                        light: "#f5f5f5", // Light gray for light mode
+                        light: "#EFE9DE", // brand-gray — warm code panel
                         dark: "#141414" // The color you specified for dark mode
                     }
                 },
@@ -206,26 +239,40 @@ const config: Config = {
                     dark: "#d18616" // A darker orange for dark mode
                 }
             },
-            keyframes: {
-                updown: {
-                    "0%, 100%": { transform: "translateY(0)" },
-                    "50%": { transform: "translateY(-10px)" }
-                },
-                leftright: {
-                    "0%, 100%": { transform: "translateX(0)" },
-                    "50%": { transform: "translateX(-10px)" }
-                }
-            },
-            animation: {
-                updown: "updown 2s infinite",
-                leftright: "leftright 1.5s infinite"
+            backgroundImage: {
+                footer: "url('/images/footer.webp')",
+                "footer-mobile": "url('/images/footer-mobile.webp')",
+                "dark-footer": "url('/images/bgdarkfooter.webp')",
+                "dark-footer-mobile": "url('/images/mobilebgdarkfooter.webp')"
             },
             fontFamily: {
-                brawler: ["var(--brawler-font)"],
-                inter: ["var(--inter-font)"]
+                inter: [
+                    "var(--font-inter)",
+                    "system-ui",
+                    "-apple-system",
+                    '"Segoe UI"',
+                    "sans-serif"
+                ],
+                // Lesson reading font (Prose body). Headings/UI stay on Inter.
+                serif: [
+                    "var(--font-source-serif)",
+                    "Georgia",
+                    "Cambria",
+                    '"Times New Roman"',
+                    "serif"
+                ],
+                quicksand: ["var(--quicksand-font)"],
+                montserrat: ["var(--montserrat-font)"]
             },
             fontSize: {
                 lg: ["17px", "28px"]
+            },
+            maxWidth: {
+                "desktop-max": "1440px",
+                // Outer cap for the decoding lesson shell (nav · content · TOC).
+                // Was referenced as max-w-9xl but never defined, so the page
+                // had no cap and sprawled on wide screens.
+                "9xl": "116rem"
             }
         }
     },
