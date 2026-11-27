@@ -11,12 +11,45 @@ module.exports = () => {
     const plugins = [withContentlayer, withBundleAnalyzer]
     return plugins.reduce((acc, next) => next(acc), {
         reactStrictMode: true,
+        transpilePackages: ["@bitcoin-dev-project/bdp-ui"],
         pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
         eslint: {
             dirs: ["app", "components", "layouts", "scripts"]
         },
         images: {
             domains: ["avatars.githubusercontent.com"]
+        },
+        async redirects() {
+            return [
+                {
+                    source: "/grants/:path*",
+                    destination: "https://grants.bitcoindevs.xyz/:path*",
+                    permanent: false
+                },
+                {
+                    source: "/grants",
+                    destination: "https://grants.bitcoindevs.xyz/",
+                    permanent: false
+                },
+                {
+                    source: "/blog/20251202_GlowUp",
+                    destination:
+                        "https://medium.com/@bitcoindevs/glow-up-95008146d653",
+                    permanent: false
+                }
+            ]
+        },
+        async rewrites() {
+            return [
+                {
+                    source: "/api/:path*",
+                    destination: "https://grants.bitcoindevs.xyz/api/:path*"
+                },
+                {
+                    source: "/logos/:path*",
+                    destination: "https://grants.bitcoindevs.xyz/logos/:path*"
+                }
+            ]
         }
     })
 }

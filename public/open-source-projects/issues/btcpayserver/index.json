@@ -12,72 +12,14 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
   },
   {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/5034",
-    "publishedAt": "2023-06-02T11:32:46Z",
-    "title": "[Bug]: Dash block is marked invalid",
-    "labels": [
-      "Bug"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/5156",
-    "publishedAt": "2023-07-05T21:05:41Z",
-    "title": "[Invoices] Improved filter iteration",
-    "labels": [
-      "Bug",
-      "UI / UX",
-      "good first issue",
-      "Invoice"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
     "url": "https://github.com/btcpayserver/btcpayserver/issues/5191",
     "publishedAt": "2023-07-25T17:42:56Z",
     "title": "[Dashboard] Support for Custom Ordering of Dashboard widgets",
     "labels": [
       "Bug",
       "UI / UX",
-      "Plugin"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6204",
-    "publishedAt": "2024-09-09T03:43:08Z",
-    "title": "Better URL input UX",
-    "labels": [
-      "good first issue",
-      "Design"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6653",
-    "publishedAt": "2025-04-05T16:45:11Z",
-    "title": "In Email Rules show \"Send the email to the buyer\" checkbox only if trigger supports it",
-    "labels": [
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6667",
-    "publishedAt": "2025-04-10T21:06:56Z",
-    "title": "Improve Bitcoin Wallet Labels to show Title of Payment Request, not Id",
-    "labels": [
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6697",
-    "publishedAt": "2025-04-25T02:10:45Z",
-    "title": "[Bug]: Keypad POS won't display \"Any amount\" items",
-    "labels": [
-      "good first issue",
-      "PoS"
+      "Plugin",
+      "Dashboard"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
   },
@@ -93,32 +35,22 @@
     "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
   },
   {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6763",
-    "publishedAt": "2025-05-31T04:06:01Z",
-    "title": "Ask for confirmation to display QR code for Server Admins in POS",
+    "url": "https://github.com/btcpayserver/btcpayserver/issues/7091",
+    "publishedAt": "2026-01-10T11:07:58Z",
+    "title": "Add support for search, specifically for TX id inside the wallet view",
     "labels": [
-      "good first issue"
-    ],
-    "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
-  },
-  {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6772",
-    "publishedAt": "2025-06-06T21:12:26Z",
-    "title": "Don't show payment method selector if there's only a single payment method or in Bitcoin case Unified QR is selected",
-    "labels": [
-      "Enhancement",
-      "UI / UX",
       "good first issue",
-      "Checkout"
+      "Wallet"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
   },
   {
-    "url": "https://github.com/btcpayserver/btcpayserver/issues/6780",
-    "publishedAt": "2025-06-10T11:34:21Z",
-    "title": "[Bug]: 0 amount invoices no longer work as free items in POS, but generate any amount",
+    "url": "https://github.com/btcpayserver/btcpayserver/issues/7092",
+    "publishedAt": "2026-01-10T11:16:33Z",
+    "title": "Standardize Wallet View: Add Date Filter for Transactions",
     "labels": [
-      "Bug"
+      "good first issue",
+      "Wallet"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/31132886?v=4"
   }

@@ -13,23 +13,24 @@
     "publishedAt": "2024-07-18T19:47:53Z",
     "title": "MacOS Build Error",
     "labels": [
-      "bug"
+      "bug",
+      "good first issue"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   },
   {
-    "url": "https://github.com/bitcoindevkit/bdk-ffi/issues/620",
-    "publishedAt": "2024-11-04T19:26:27Z",
-    "title": "LDK Node + BDK",
+    "url": "https://github.com/bitcoindevkit/bdk-ffi/issues/818",
+    "publishedAt": "2025-07-29T14:14:19Z",
+    "title": "Add examples module to all bindings",
     "labels": [
-      "bug"
+      "good first issue"
     ],
     "imageUrl": "https://avatars.githubusercontent.com/u/62867074?v=4"
   },
   {
-    "url": "https://github.com/bitcoindevkit/bdk-ffi/issues/621",
-    "publishedAt": "2024-11-04T21:00:21Z",
-    "title": "Importing multiple swift bindings modulemap collision",
+    "url": "https://github.com/bitcoindevkit/bdk-ffi/issues/912",
+    "publishedAt": "2025-11-19T22:06:17Z",
+    "title": "bdk-swift Tests folder",
     "labels": [
       "bug"
     ],
